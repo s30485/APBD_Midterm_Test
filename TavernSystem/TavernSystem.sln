@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TavernSystem.API", "src\TavernSystem.API\TavernSystem.API.csproj", "{17AB5ED5-5A44-43E7-ADAE-E2658F8CCD0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TavernSystem.Models", "src\TavernSystem.Models\TavernSystem.Models.csproj", "{AB37D282-F5AC-4A46-AF09-AB9E328E2323}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TavernSystem.Repositories", "src\TavernSystem.Repositories\TavernSystem.Repositories.csproj", "{08F0F399-5A69-46EA-9521-C9449C76A229}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TavernSystem.Application", "src\TavernSystem.Application\TavernSystem.Application.csproj", "{50ABBA19-9594-464E-8670-10513AAB547B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17AB5ED5-5A44-43E7-ADAE-E2658F8CCD0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17AB5ED5-5A44-43E7-ADAE-E2658F8CCD0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17AB5ED5-5A44-43E7-ADAE-E2658F8CCD0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17AB5ED5-5A44-43E7-ADAE-E2658F8CCD0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB37D282-F5AC-4A46-AF09-AB9E328E2323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB37D282-F5AC-4A46-AF09-AB9E328E2323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB37D282-F5AC-4A46-AF09-AB9E328E2323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB37D282-F5AC-4A46-AF09-AB9E328E2323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08F0F399-5A69-46EA-9521-C9449C76A229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F0F399-5A69-46EA-9521-C9449C76A229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F0F399-5A69-46EA-9521-C9449C76A229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F0F399-5A69-46EA-9521-C9449C76A229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50ABBA19-9594-464E-8670-10513AAB547B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50ABBA19-9594-464E-8670-10513AAB547B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50ABBA19-9594-464E-8670-10513AAB547B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50ABBA19-9594-464E-8670-10513AAB547B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

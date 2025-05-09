@@ -1,0 +1,13 @@
+{
+    "id": 1,
+    "nickname": "n1ckn1m3",
+    "race": "dwarf",
+    "experienceLevel": "Intermediate",
+    "personData": {
+        "id": "AC180905054134DD",
+        "firstName": "Adam",
+        "middleName": null,
+        "lastName": "Copper",
+        "hasBountry": "false"
+    }
+}

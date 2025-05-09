@@ -769,6 +769,33 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "TavernSystem.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "6.1.0-preview1.25120.4"
+        },
+        "compile": {
+          "bin/placeholder/TavernSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TavernSystem.Models.dll": {}
+        }
+      },
+      "TavernSystem.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "6.1.0-preview1.25120.4",
+          "TavernSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TavernSystem.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TavernSystem.Repositories.dll": {}
+        }
       }
     }
   },
@@ -2168,13 +2195,24 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "TavernSystem.Models/1.0.0": {
+      "type": "project",
+      "path": "../TavernSystem.Models/TavernSystem.Models.csproj",
+      "msbuildProject": "../TavernSystem.Models/TavernSystem.Models.csproj"
+    },
+    "TavernSystem.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../TavernSystem.Repositories/TavernSystem.Repositories.csproj",
+      "msbuildProject": "../TavernSystem.Repositories/TavernSystem.Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.AspNetCore.OpenApi >= 8.0.8",
       "Microsoft.Data.SqlClient >= 6.1.0-preview1.25120.4",
-      "Swashbuckle.AspNetCore >= 6.4.0"
+      "Swashbuckle.AspNetCore >= 6.4.0",
+      "TavernSystem.Repositories >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2203,7 +2241,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\s30485\\Desktop\\APBD_Midterm_Test\\TavernSystem\\src\\TavernSystem.Repositories\\TavernSystem.Repositories.csproj": {
+              "projectPath": "C:\\Users\\s30485\\Desktop\\APBD_Midterm_Test\\TavernSystem\\src\\TavernSystem.Repositories\\TavernSystem.Repositories.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

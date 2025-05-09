@@ -1,4 +1,9 @@
+using System.ComponentModel.DataAnnotations;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.Net.Http.Headers;
+using TavernSystem.Repositories.DTOs;
+using TavernSystem.Repositories.Interfaces;
+using TavernSystem.Repositories.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,9 +12,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var connectionString = builder.Configuration.GetConnectionString("Database");
+var connectionString = builder.Configuration.GetConnectionString("DB");
 
-builder.Services.AddSingleton<ICurrencyService, CurrencyService>(s => new CurrencyService(connectionString));
+builder.Services.AddSingleton<IAdventurerService, AdventurerService>(s => new AdventurerService(connectionString));
 
 var app = builder.Build();
 
@@ -22,31 +27,35 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.MapGet("/api/adventurers", async (IAdventurerService service) =>
+{
+    var result = await service.GetAllAdventurersAsync();
+    return result.Count == 0 ? Results.NoContent() : Results.Ok(result);
+});
 
-app.MapPost("/api/adventurers", async (CurrencyRequestDTO request, ICurrencyService service) =>
+app.MapGet("/api/adventurers/{id:int}", async (int id, IAdventurerService service) =>
+{
+    var result = await service.GetAdventurerByIdAsync(id);
+    return result is null ? Results.NotFound() : Results.Ok(result);
+});
+
+app.MapPost("/api/adventurers", async (CreateAdventurerDTO dto, IAdventurerService service) =>
 {
     try
     {
-        //can validate here
-        Validator.ValidateCurrency(request);
-        var result = await service.AddCurrency(request);
-        return result ? Results.NoContent() : Results.BadRequest();
+        var result = await service.CreateAdventurerAsync(dto);
+        return result ? Results.Created("/api/adventurers", dto) : Results.Conflict("Adventurer already exists for this person.");
     }
-    catch (Exception ex)
+    catch (InvalidOperationException ex)
+    {
+        return Results.StatusCode(403); //person has bounty or not found
+    }
+    catch (ArgumentException ex)
     {
         return Results.BadRequest(ex.Message);
     }
 });
 
-app.MapGet("/api/search", async (string type, string query, ICurrencyService service) =>
-{
-    try
-    {
-        var result = await service.SearchCurrency(type, query);
-        return result is not null ? Results.Ok(result) : Results.NoContent();
-    }
-    catch (Exception ex)
-    {
-        return Results.BadRequest(ex.Message);
-    }
-});
+
+
+app.Run();

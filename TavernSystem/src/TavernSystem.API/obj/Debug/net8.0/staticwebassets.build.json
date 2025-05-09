@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "MfyrDLTO0g+kPAVme77CzCd77LTJoUZGkyb8rKFrARE=",
+  "Source": "TavernSystem.API",
+  "BasePath": "_content/TavernSystem.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

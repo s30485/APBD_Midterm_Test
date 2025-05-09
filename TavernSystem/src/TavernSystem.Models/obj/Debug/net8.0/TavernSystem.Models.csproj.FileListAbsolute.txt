@@ -1,0 +1,13 @@
+C:\Users\s30485\Desktop\APBD_Midterm_Test\TavernSystem\src\TavernSystem.Models\bin\Debug\net8.0\TavernSystem.Models.deps.json
+C:\Users\s30485\Desktop\APBD_Midterm_Test\TavernSystem\src\TavernSystem.Models\bin\Debug\net8.0\TavernSystem.Models.dll
+C:\Users\s30485\Desktop\APBD_Midterm_Test\TavernSystem\src\TavernSystem.Models\bin\Debug\net8.0\TavernSystem.Models.pdb
+C:\Users\s30485\Desktop\APBD_Midterm_Test\TavernSystem\src\TavernSystem.Models\obj\Debug\net8.0\TavernSystem.Models.csproj.AssemblyReference.cache
+C:\Users\s30485\Desktop\APBD_Midterm_Test\TavernSystem\src\TavernSystem.Models\obj\Debug\net8.0\TavernSystem.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s30485\Desktop\APBD_Midterm_Test\TavernSystem\src\TavernSystem.Models\obj\Debug\net8.0\TavernSystem.Models.AssemblyInfoInputs.cache
+C:\Users\s30485\Desktop\APBD_Midterm_Test\TavernSystem\src\TavernSystem.Models\obj\Debug\net8.0\TavernSystem.Models.AssemblyInfo.cs
+C:\Users\s30485\Desktop\APBD_Midterm_Test\TavernSystem\src\TavernSystem.Models\obj\Debug\net8.0\TavernSystem.Models.csproj.CoreCompileInputs.cache
+C:\Users\s30485\Desktop\APBD_Midterm_Test\TavernSystem\src\TavernSystem.Models\obj\Debug\net8.0\TavernSystem.Models.sourcelink.json
+C:\Users\s30485\Desktop\APBD_Midterm_Test\TavernSystem\src\TavernSystem.Models\obj\Debug\net8.0\TavernSystem.Models.dll
+C:\Users\s30485\Desktop\APBD_Midterm_Test\TavernSystem\src\TavernSystem.Models\obj\Debug\net8.0\refint\TavernSystem.Models.dll
+C:\Users\s30485\Desktop\APBD_Midterm_Test\TavernSystem\src\TavernSystem.Models\obj\Debug\net8.0\TavernSystem.Models.pdb
+C:\Users\s30485\Desktop\APBD_Midterm_Test\TavernSystem\src\TavernSystem.Models\obj\Debug\net8.0\ref\TavernSystem.Models.dll
